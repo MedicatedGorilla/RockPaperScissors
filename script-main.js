@@ -1,3 +1,4 @@
+//Added these globally for further usage although getElementByID would be more efficient
 let startButton = document.getElementById('startButton');
 let rockButton = document.createElement('button');
 let paperButton = document.createElement('button');
@@ -73,6 +74,7 @@ function playGame(player){
         console.log("You lose the match!")
         computerScoreCount = computerScoreCount + 1;
     }
+
     playerScore.innerText = 'Player Score: '+ playerScoreCount;
     computerScore.innerText = 'Computer Score: ' + computerScoreCount;
     console.log("Your choice: " + rps[player-1] + ", Computer choice: " + rps[computer-1])
